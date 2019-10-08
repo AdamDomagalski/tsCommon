@@ -1,1 +1,1 @@
-# tsCommon
+Initial Typescript/tslint/package.json config template.

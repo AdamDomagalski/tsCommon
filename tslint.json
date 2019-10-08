@@ -1,0 +1,208 @@
+{
+  "extends": ["tslint:latest","tslint-no-unused-expression-chai"],
+
+  "rules": {
+    "adjacent-overload-signatures": true,
+    "ban-ts-ignore": true,
+    "ban-types": {
+      "options": [
+        ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+        ["Function", "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."],
+        ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+        ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+        ["String", "Avoid using the `String` type. Did you mean `string`?"]
+      ]
+    },    "member-access": [
+      true,
+      "check-parameter-property"
+    ],
+    "member-ordering": {
+      "options": {
+        "order": "statics-first"
+      }
+    },
+    "no-any": {
+      "severity": "warning"
+    },
+    "no-empty-interface": true,
+    "no-import-side-effect": true,
+    "no-inferrable-types": false,
+    "no-internal-module": true,
+    "no-magic-numbers": [
+      true,
+      0,
+      1
+    ],
+    "no-namespace": true,
+    "no-parameter-reassignment": true,
+    "no-unnecessary-type-assertion": false,
+    "no-var-requires": {
+      "severity": "warning"
+    },
+    "only-arrow-functions": false,
+    "prefer-for-of": true,
+    "promise-function-async": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "property-declaration",
+      "member-variable-declaration"
+    ],
+    "unified-signatures": true,
+    "no-unbound-method": [
+      true,
+      "ignore-static"
+    ],
+    "no-unnecessary-class": [true,"allow-static-only", "allow-constructor-only"],
+    "no-unsafe-any": false,
+    "no-unsafe-finally": true,
+    "no-unused-expression-chai": true,
+    "no-unused-variable": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "no-void-expression": [true,"ignore-arrow-function-shorthand"],
+    "prefer-conditional-expression": [true, "check-else-if"],
+    "prefer-object-spread": true,
+    "radix": false,
+    "restrict-plus-operands": true,
+    "static-this": true,
+    "strict-boolean-expressions": false,
+
+    "switch-default": true,
+    "switch-final-break": true,
+    "triple-equals": [true,"allow-undefined-check","allow-null-check"],
+
+    "unnecessary-constructor": true,
+    "use-default-type-parameter": true,
+    "use-isnan": true,
+    "cyclomatic-complexity": [
+      true,
+      5
+    ],
+    "max-line-length": [true, {"limit": 170, "ignore-pattern": "^import |^export {(.*?)}"}],
+    "deprecation": true,
+    "max-classes-per-file": [true,2],
+    "max-file-line-count": [true, 300],
+    "no-default-export": false,
+    "no-default-import": false,
+    "no-duplicate-imports": true,
+    "no-mergeable-namespace": true,
+    "no-require-imports": {
+      "severity": "warning"
+    },
+    "object-literal-sort-keys": false,
+    "prefer-const": true,
+    "prefer-readonly": true,
+    "class-name": true,
+    "encoding": true,
+    "increment-decrement": true,
+    "file-name-casing": [false],
+    "file-header": false,
+    "completed-docs": false,
+    "comment-format": false,
+    "comment-type": false,
+    "interface-over-type-literal": false,
+    "match-default-export-name": true,
+    "newline-per-chained-call": false,
+    "no-angle-bracket-type-assertion": false,
+    "no-boolean-literal-compare": true,
+    "no-parameter-properties": true,
+    "no-redundant-jsdoc": true,
+    "no-reference-import": true,
+    "no-unnecessary-callback-wrapper": true,
+    "no-unnecessary-initializer": true,
+    "no-unnecessary-qualifier": true,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "object-literal-shorthand": true,
+    "one-line": [true, "check-catch", "check-finally", "check-else","check-open-brace"],
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "ordered-imports": false,
+    "prefer-function-over-method": true,
+    "prefer-method-signature": true,
+    "prefer-switch": [true, {"min-cases": 2}],
+    "prefer-template": true,
+    "prefer-while": true,
+    "return-undefined": true,
+    "space-before-function-paren":false,
+    "space-within-parens": false,
+    "type-literal-delimiter": false,
+    "unnecessary-bind": true,
+    "unnecessary-else": true,
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "check-format",
+        "allow-leading-underscore",
+        "allow-pascal-case"
+      ]
+    },
+    "allow-override": true,
+    "await-promise": [true,"WebElementPromise"],
+    "ban-comma-operator": true,
+    "ban": {
+      "options": [
+        [
+          "describe",
+          "only"
+        ],
+        [
+          "it",
+          "only"
+        ]
+      ]
+    },
+    "arrow-return-shorthand": true,
+    "binary-expression-operand-order": false,
+    "callable-types": false,
+    "curly": true,
+    "forin": true,
+    "function-constructor": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-console": true,
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-duplicate-switch-case": true,
+    "no-duplicate-variable": true,
+    "no-dynamic-delete": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-floating-promises": true,
+    "no-for-in-array": true,
+    "no-implicit-dependencies": [true, "dev"],
+    "no-inferred-empty-object-type": true,
+    "no-invalid-this": false,
+    "no-misused-new": true,
+    "no-null-keyword": false,
+    "newline-before-return": false,
+    "no-non-null-assertion": false,
+    "strict-type-predicates": false,
+    "no-object-literal-type-assertion": true,
+    "no-return-await": true,
+    "no-shadowed-variable": true,
+    "no-sparse-arrays": true,
+    "no-string-literal": true,
+    "no-string-throw": true,
+    "no-submodule-imports": false,
+    "no-switch-case-fall-through": true,
+    "no-tautology-expression": true,
+    "no-this-assignment": true,
+    "interface-name": false,
+    "linebreak-style": false,
+    "quotemark": [true,"single"],
+    "eofline": false,
+    "trailing-comma": false,
+    "no-trailing-whitespace": true,
+    "no-invalid-template-strings": true,
+    "no-consecutive-blank-lines": true,
+    "no-irregular-whitespace": true,
+    "number-literal-format": true
+  },
+  "rulesDirectory": [
+    "tslint-no-unused-expression-chai"
+  ]
+}
