@@ -1,6 +1,6 @@
 {
   "name": "tscommon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic ts configs",
   "main": "index.js",
   "scripts": {
@@ -21,9 +21,9 @@
   "bugs": {
     "url": "https://github.com/AdamDomagalski/tsCommon/issues"
   },
-    "husky": {
+  "husky": {
     "hooks": {
-      "pre-commit": "echo `Uncomment when ready #npm run unitTests && npm run tslint && npm version patch --no-git-tag-version && git add package.json package-lock.json`"
+      "pre-commit": "echo `remove from echo when ready #npm run unitTests && npm run tslint && npm version patch --no-git-tag-version && git add package.json package-lock.json` && npm version patch --no-git-tag-version && git add package.json package-lock.json"
     }
   },
   "homepage": "https://github.com/AdamDomagalski/tsCommon#readme",
@@ -43,4 +43,5 @@
     "mocha": "6.2.0",
     "ts-node": "8.4.1",
     "ts-node-dev": "1.0.0-pre.43"
+  }
 }
