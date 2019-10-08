@@ -1,6 +1,6 @@
 {
   "name": "tscommon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Basic ts configs",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo `remove from echo when ready #npm run unitTests && npm run tslint && npm version patch --no-git-tag-version && git add package.json package-lock.json` && npm version patch --no-git-tag-version && git add package.json package-lock.json"
+      "pre-commit": "npm i && echo `remove from echo when ready #npm run unitTests && npm run tslint && npm version patch --no-git-tag-version && git add package.json package-lock.json` && npm version patch --no-git-tag-version && git add package.json package-lock.json"
     }
   },
   "homepage": "https://github.com/AdamDomagalski/tsCommon#readme",
