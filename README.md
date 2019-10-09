@@ -1,1 +1,1 @@
-Initial Typescript/tslint/package.json config template.
+Initial Typescript/eslint/tslint/package.json config template.
