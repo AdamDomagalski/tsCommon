@@ -1,6 +1,6 @@
 {
   "name": "tsconfig_with_esling_sample",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Base configuration with extended lint rules and auto version bumping",
   "engines": {
     "node": ">=12.14.1"
@@ -13,14 +13,25 @@
     "tscwatch": "node ./node_modules/tsc-watch/index.js --watch"
   },
   "keywords": [
+    "typescript",
+    "tslint",
+    "gitignore"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AdamDomagalski/tsCommon.git"
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run unitTests && npm run eslint && bump patch && git add package.json package-lock.json"
+      "pre-commit": "echo `remove from echo when ready npm run unitTests && npm run eslint && npm version patch --no-git-tag-version && git add package.json package-lock.json`"
     }
+  },
+  "bugs": {
+    "url": "https://github.com/AdamDomagalski/tsCommon/issues"
   },
   "author": "Adam Domagalski",
   "license": "MIT",
+  "homepage": "https://github.com/AdamDomagalski/tsCommon#readme",
   "dependencies": {
   },
   "devDependencies": {
@@ -51,7 +62,6 @@
     "tslint": "5.20.0",
     "tslint-eslint-rules": "5.4.0",
     "tslint-no-unused-expression-chai": "0.1.4",
-    "typescript": "3.6.3",
-    "version-bump-prompt": "5.0.5"
+    "typescript": "3.6.3"
   }
 }
