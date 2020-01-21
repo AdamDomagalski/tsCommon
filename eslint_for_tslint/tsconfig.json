@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "outDir": "./dist",
+    "lib": ["es6", "dom", "es2017"],
+    "module": "commonjs",
+    "target": "ES6",
+    "sourceMap": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules",
+    ".idea",
+    "built",
+    "build",
+    ".git"
+  ],
+  "include": [
+    "./src/**/*",
+    "./src/config/default.json",
+    "./test/**/*"
+  ]
+}
