@@ -15,7 +15,6 @@
     "sourceType": "module"
   },
   "rules": {
-    //    full list can be found: https://eslint.org/docs/rules/
     "indent": [
       "error",
       4,
