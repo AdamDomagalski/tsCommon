@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo `remove from echo when ready npm run unitTests && npm run eslint && npm version patch --no-git-tag-version && git add package.json package-lock.json`"
+      "pre-commit": "echo `remove from echo when ready npm run unitTests && npm run eslint && npm version patch --no-git-tag-version && npm audit fix && git add package.json package-lock.json`"
     }
   },
   "bugs": {
